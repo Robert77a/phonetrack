@@ -1,0 +1,315 @@
+{
+  "name": {
+    "pt_BR": "Ligação encerrada",
+    "en": "Call ended"
+  },
+  "description": {
+    "pt_BR": "Evento executado ao encerrar uma ligação",
+    "en": "Tiggers when a call has ended"
+  },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {
+        "key": "call_id",
+        "name": {
+          "pt_BR": "ID da ligação",
+          "en": "Call ID"
+        },
+        "description": {
+          "pt_BR": "ID da ligação",
+          "en": "Call ID"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "origin_number",
+        "name": {
+          "pt_BR": "Número de origem",
+          "en": "Origin number"
+        },
+        "description": {
+          "pt_BR": "Número de origem sem formatação",
+          "en": "Origin number raw"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "origin_formatted",
+        "name": {
+          "pt_BR": "Número de origem formatado",
+          "en": "Origin number formatted"
+        },
+        "description": {
+          "pt_BR": "Número de origem com formatação",
+          "en": "Origin number formatted"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "dialled_number",
+        "name": {
+          "pt_BR": "Número máscara",
+          "en": "Mask number"
+        },
+        "description": {
+          "pt_BR": "Número máscara do PhoneTrack sem formatação",
+          "en": "PhoneTrack's mask number raw"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "dialled_formatted",
+        "name": {
+          "pt_BR": "Número máscara formatado",
+          "en": "Mask number formatted"
+        },
+        "description": {
+          "pt_BR": "Número máscara do PhoneTrack com formatação",
+          "en": "PhoneTrack's mask number formatted"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "destination_number",
+        "name": {
+          "pt_BR": "Número de destino",
+          "en": "Destination number"
+        },
+        "description": {
+          "pt_BR": "Número de destino sem formatação",
+          "en": "Destination number raw"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "destination_formatted",
+        "name": {
+          "pt_BR": "Número de destino formatado",
+          "en": "Destination number formatted"
+        },
+        "description": {
+          "pt_BR": "Número de destino com formatação",
+          "en": "Destination number formatted"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "duration",
+        "name": {
+          "pt_BR": "Duração",
+          "en": "Duration"
+        },
+        "description": {
+          "pt_BR": "Duração da ligação em segundos",
+          "en": "Call duration in seconds"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "bill_duration",
+        "name": {
+          "pt_BR": "Duração de cobrança",
+          "en": "Billing duration"
+        },
+        "description": {
+          "pt_BR": "Duração de cobrança em segundos",
+          "en": "Billing duration in seconds"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "status",
+        "name": {
+          "pt_BR": "Status",
+          "en": "Status"
+        },
+        "description": {
+          "pt_BR": "Status da ligação",
+          "en": "Call status"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "hangup_cause",
+        "name": {
+          "pt_BR": "Status de encerramento",
+          "en": "Hangup status"
+        },
+        "description": {
+          "pt_BR": "Status de encerramento da ligação ",
+          "en": "Hangup status"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "advert_id",
+        "name": {
+          "pt_BR": "ID do anúncio",
+          "en": "Advert ID"
+        },
+        "description": {
+          "pt_BR": "ID do anúncio",
+          "en": "Advert ID"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "advert_name",
+        "name": {
+          "pt_BR": "Nome do anúncio",
+          "en": "Advert name"
+        },
+        "description": {
+          "pt_BR": "Nome do anúncio",
+          "en": "Advert name"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "adgroup_id",
+        "name": {
+          "pt_BR": "ID do grupo",
+          "en": "Group ID"
+        },
+        "description": {
+          "pt_BR": "ID do grupo do anúncio",
+          "en": "Advert Group ID"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "adgroup_name",
+        "name": {
+          "pt_BR": "Nome do grupo",
+          "en": "Group name"
+        },
+        "description": {
+          "pt_BR": "Nome do grupo do anúncio",
+          "en": "Advert Group name"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "campaign_id",
+        "name": {
+          "pt_BR": "ID da campanha",
+          "en": "Campaign ID"
+        },
+        "description": {
+          "pt_BR": "ID da campanha",
+          "en": "Campaign ID"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "campaign_name",
+        "name": {
+          "pt_BR": "Nome da campanha",
+          "en": "Campaign name"
+        },
+        "description": {
+          "pt_BR": "Nome da campanha",
+          "en": "Campaign name"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "client_id",
+        "name": {
+          "pt_BR": "ID da unidade",
+          "en": "Unity ID"
+        },
+        "description": {
+          "pt_BR": "ID da unidade",
+          "en": "Unity ID"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "audio_record",
+        "name": {
+          "pt_BR": "Gravação",
+          "en": "Record"
+        },
+        "description": {
+          "pt_BR": "URL da gravação da ligação",
+          "en": "Call record URL"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "digits",
+        "name": {
+          "pt_BR": "Dígitos",
+          "en": "Digits"
+        },
+        "description": {
+          "pt_BR": "Digítos capturados da origem",
+          "en": "Digits from originator"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "origin_number_ignored",
+        "name": {
+          "pt_BR": "Origem ignorada",
+          "en": "Ignored origin"
+        },
+        "description": {
+          "pt_BR": "Número de origem ignorado",
+          "en": "Origination number ignored"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "date_start",
+        "name": {
+          "pt_BR": "Data de início",
+          "en": "Date start"
+        },
+        "description": {
+          "pt_BR": "Data/hora de início da ligação",
+          "en": "Date time call start"
+        },
+        "field_type": "datetime"
+      },
+      {
+        "key": "date_answer",
+        "name": {
+          "pt_BR": "Data de atendimento",
+          "en": "Date answer"
+        },
+        "description": {
+          "pt_BR": "Data/hora de atendimento da ligação",
+          "en": "Date time call answer"
+        },
+        "field_type": "datetime"
+      },
+      {
+        "key": "date_end",
+        "name": {
+          "pt_BR": "Data de encerramento",
+          "en": "Date end"
+        },
+        "description": {
+          "pt_BR": "Data/hora de encerramento da ligação",
+          "en": "Date time call end"
+        },
+        "field_type": "datetime"
+      },
+      {
+        "key": "failed",
+        "name": {
+          "pt_BR": "Falhou",
+          "en": "Failed"
+        },
+        "description": {
+          "pt_BR": "A ligação não foi atendida",
+          "en": "Call was not answered"
+        },
+        "field_type": "integer"
+      }
+    ]
+  }
+}
