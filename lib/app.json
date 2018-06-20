@@ -1,4 +1,101 @@
 {
-  "app_id": "myapp",
-  "name": "MyApp"
+  "app_id": "phonetrack",
+  "name": "PhoneTrack",
+  "description": {
+    "pt_BR": "Plataforma de call tracking que mensura ligações recebidas, auxiliando nas áreas de venda, gestão, atendimento e marketing da empresa.",
+    "en": "Call tracking platform that mensures received calls, helping sales teams, management, customer service and marketing of the company."
+  },
+  "website": "https://phonetrack.com.br",
+  "signup_url": "https://phonetrack.com.br/planos",
+  "api_base_uri": {
+    "production": {
+      "uri": "https://painel.phonetrack.com.br/api",
+      "label": "Produção",
+      "default": true
+    },
+    "homolog": {
+      "uri": "https://dev.phonetrack.com.br/api",
+      "label": "Homologação"
+    }
+  },
+  "authentication": {
+    "type": "pass_through_header",
+    "fields": [{
+      "name": "api_key",
+      "label": "Chave de acesso à API",
+      "mapping": "Authorization",
+      "prefix": "Bearer",
+      "type": "text",
+      "validations": [{
+        "name": "min_length",
+        "value": 20
+      }]
+    }],
+    "ping_request": {
+      "method": "/v1/hooks/ping"
+    },
+    "tutorial": {
+      "link": {
+        "pt_BR": "Onde encontrar a chave de acesso à API no painel PhoneTrack?",
+        "en": "Where find the API key in PhoneTrack dashboard?"
+      },
+      "steps": [{
+          "title": {
+            "pt_BR": "Passo 1",
+            "en": "Step 1"
+          },
+          "content": {
+            "pt_BR": "Acesse o painel PhoneTrack e clique no submenu Integrações, dentro do menu configurações.",
+            "en": "Go to PhoneTrack dashboard and click in Integrations submenu inside Settings menu."
+          },
+          "img_url": {
+            "pt_BR": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step1_pt_BR.png",
+            "en": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step1_en.png"
+          }
+        },
+        {
+          "title": {
+            "pt_BR": "Passo 2",
+            "en": "Setp 2"
+          },
+          "content": {
+            "pt_BR": "Clique no botão configurar da API PhoneTrack.",
+            "en": "Click in configure button of API PhoneTrack."
+          },
+          "img_url": {
+            "pt_BR": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step2_pt_BR.png",
+            "en": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step2_en.png"
+          }
+        },
+        {
+          "title": {
+            "pt_BR": "Passo 3",
+            "en": "Setp 3"
+          },
+          "content": {
+            "pt_BR": "Clique no botão Ativar.",
+            "en": "Click in Activate API button."
+          },
+          "img_url": {
+            "pt_BR": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step3_pt_BR.png",
+            "en": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step3_en.png"
+          }
+        },
+        {
+          "title": {
+            "pt_BR": "Passo 4",
+            "en": "Setp 4"
+          },
+          "content": {
+            "pt_BR": "Clique em copiar token.",
+            "en": "Click in copy token."
+          },
+          "img_url": {
+            "pt_BR": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step4_pt_BR.png",
+            "en": "https://painel.phonetrack.com.br/assets/images/plugaco/ins-step4_en.png"
+          }
+        }
+      ]
+    }
+  }
 }
